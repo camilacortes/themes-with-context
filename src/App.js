@@ -1,17 +1,23 @@
-  
 import React from 'react';
-import Navbar from '../src/components/Navbar'
-import Footer from '../src/components/Footer'
-import Mainbar from '../src/components/Main'
+import {ThemeContextConsumer} from './themeContextProvider.js';
 
-function App() {
-  return (
-    <>
-    <Navbar/>
-    <Mainbar/>
-    <Footer/>
-    </>
-  );
+
+function App(props) {
+
+  return(
+    <ThemeContextConsumer>
+      { 
+      value => {
+        return(
+      <div style={{backgroundColor: value.backgroundColor, color: value.textColor, display: "block" , width: "400px", height: "400px" }}>
+      <p>Changing themes with Context! </p>
+      <button onClick={value.changingTheme}>Change the Theme</button>
+      </div>)
+      }
+      }
+    </ThemeContextConsumer>
+  )
+
 }
 
-export default App;
+export default App

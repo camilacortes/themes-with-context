@@ -3,49 +3,4 @@ body {
   font-family: 'Press Start 2P', cursive;
 }
 
-.container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 77px 500px 88px;
-}
 
-.nav {
-  /* background-color: #d5fafa; */
-  list-style-type: none;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-li {
-  display: inline;
-  margin: 80px;
-}
-
-.main {
-  grid-row: 2/3;
-  text-align: center;
-  padding: 100px;
-}
-
-.header-main {
-  font-size: 40px;
-}
-
-.footer {
-  text-align: center;
-  padding: 20px;
-  grid-row: 3/3;
-  /* background-color: #d5fafa; */
-}
-
-.light-theme {
-  background-color: #d5fafa;
-}
-
-.dark-theme {
-  background-color: grey;
-}
-
-button{
-  
-}
